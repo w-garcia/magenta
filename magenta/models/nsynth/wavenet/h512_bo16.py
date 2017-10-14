@@ -13,16 +13,15 @@
 # limitations under the License.
 """A WaveNet-style AutoEncoder Configuration and FastGeneration Config."""
 
-from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import tensorflow as tf
 # internal imports
 from six.moves import range  # pylint: disable=redefined-builtin
-import tensorflow as tf
-from magenta.models.nsynth import reader
-from magenta.models.nsynth import utils
-from magenta.models.nsynth.wavenet import masked
+
+import utils
+import masked, reader
 
 
 class FastGenerationConfig(object):

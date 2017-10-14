@@ -20,8 +20,8 @@ import sys
 import numpy as np
 import tensorflow as tf
 
-from magenta.models.nsynth import utils
-from magenta.models.nsynth.wavenet.fastgen import encode
+import utils
+from fastgen import encode
 
 FLAGS = tf.app.flags.FLAGS
 
